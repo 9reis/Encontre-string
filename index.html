@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encotnra a String</title>
+</head>
+<body>
+
+    <script>
+        // Criar um metodo para ler propriedades de um objetto e 
+        //Exibir somente as propriedades do tipo string que estão nesse objeto
+
+        const filme = {
+            titulo:'Vingadores',
+            ano: 2018, 
+            diretor: 'Robin',
+            personagem: 'Pantera Negra'
+        }
+
+        exibirPropriedades(filme);
+
+        function exibirPropriedades(obj){
+
+            for(prop in obj)
+            if(typeof obj[prop] === 'string')
+            console.log(prop, obj[prop])
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
